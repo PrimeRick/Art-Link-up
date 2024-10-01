@@ -1,7 +1,5 @@
 # Project Title: ArtConnect - Real-Time Art Marketplace
 
-## Duration: July 2023 - August 2023
-
 ## Tech Stack
 - **Frontend**: Next.js, TypeScript, Tanstack Query
 - **Backend**: Node.js, Prisma, PostgreSQL
