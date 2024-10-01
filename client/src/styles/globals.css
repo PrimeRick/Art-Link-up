@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #eee;
+  -webkit-text-fill-color: gray;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@layer base {
+  /* Headings */
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl font-medium;
+  }
+
+  h4 {
+    @apply text-xl font-medium;
+  }
+
+  h5 {
+    @apply text-lg font-medium;
+  }
+
+  h6 {
+    @apply text-base font-medium;
+  }
+
+  /* Paragraph */
+  p {
+    @apply text-base leading-relaxed;
+  }
+
+  /* Lists */
+  ul {
+    @apply list-none pl-5;
+  }
+
+  ol {
+    @apply list-none pl-5;
+  }
+
+  li {
+    @apply list-none;
+  }
+
+  /* Links */
+  a {
+    @apply text-primary-black/75 transition-all hover:text-primary-black;
+  }
+
+  /* Blockquote */
+  blockquote {
+    @apply border-l-4 pl-4 italic;
+  }
+
+  /* Code */
+  code {
+    @apply rounded bg-gray-100 px-2 py-1 text-red-500/75;
+  }
+
+  pre {
+    @apply overflow-x-auto rounded bg-gray-800 p-4 text-white;
+  }
+}
+
+@layer components {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .no-scroll::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@layer utilities {
+}
+
+.rce-mbox-right {
+  background-color: rgb(56, 216, 168) !important;
+  max-width: 60%;
+}
+
+.rce-mbox-right-notch {
+  fill: rgb(56, 216, 168) !important;
+}

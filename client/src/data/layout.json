@@ -1,0 +1,38 @@
+{
+  "header": {
+    "links": [
+      {
+        "id": 1,
+        "name": "Home",
+        "type": "link",
+        "url": "/",
+        "isAuth": false
+      },
+      {
+        "id": 2,
+        "name": "Artists",
+        "type": "link",
+        "url": "/artists",
+        "isAuth": false
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "id": 1,
+        "name": "Home",
+        "type": "link",
+        "url": "/",
+        "isAuth": false
+      },
+      {
+        "id": 2,
+        "name": "Artists",
+        "type": "link",
+        "url": "/artists",
+        "isAuth": false
+      }
+    ]
+  }
+}
